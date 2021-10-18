@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miel Don Humberto</title>
+
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" rel="stylesheet">
+
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    <!-- JQUERY -->
+    <script src="../source/Js/jquery-3.6.0.min.js"></script>
+
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="../source/Estilos/all.min.css">
+    <link rel="stylesheet" href="../source/Estilos/style.css">
+
+    <!-- SCRIPTS -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../source/Js/main.js"></script>
+    
+    
+</head>
+
+<body>
+    <header id="home" class="container-fluid">
+        <div class="menuRedes">
+            <a href="https://www.facebook.com/profile.php?id=100004810981260" target="_blank"><i
+                    class="fab fa-facebook-square"></i></a>
+            <h2>Productos Artesanales</h2>
+            <a href="https://www.instagram.com/mieldonhumberto/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+
+        <h1>Don Humberto</h1>
+
+        <nav class="navbar navbar-expand-sm navbar-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav navegacion me-auto mb-2 mb-lg-0">
+                        <li class="nav-item navegacionItem">
+                            <a class="nav-link navegacionLink active" aria-current="page"
+                                href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item navegacionItem">
+                            <a class="nav-link navegacionLink active" aria-current="page"
+                                href="../index.html#tienda">Tienda</a>
+                        </li>
+                        <li class="nav-item navegacionItem">
+                            <a class="botonCarrito nav-link navegacionLink active" aria-current="page" href="#carrito">Carrito</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <a href="https://api.whatsapp.com/send?phone=+54 9 3513 55-7194" class="wpp" target="_blank"><i
+                        class="fab fa-whatsapp my-wpp"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div  class="container-fluid carro">
+            <div class="container carrito">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                            aria-selected="true">Carrito
+                        </button>
+                        <!-- <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                            type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Guardados
+                        </button> -->
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div id="nav-home" class="tab-pane fade show active" role="tabpanel"
+                        aria-labelledby="nav-home-tab">
+                       
+                    </div>
+                    <div class="tab-pane fade" id="nav-home-1" role="tabpanel" aria-labelledby="nav-home-tab">No hay
+                        productos en el carrito.
+                    </div> 
+                    <div class="tab-pane fade" id="nav-profile-1" role="tabpanel" aria-labelledby="nav-profile-tab">No
+                        hay
+                        productos guardados.
+                    </div>
+                </div>
+                <div class="suma row">
+                    <!-- ****Formulario de Dirección de Envío***** -->
+                    <div class="direccion col-sm-4">
+                        <!-- Button trigger modal -->
+
+                        <button id="btnFormDireccion" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Dirección de envío
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Elegí dónde recibir tus compras
+                                        </h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <form action="">
+                                        <div class="modal-body">
+                                            <div class="form-floating mb-3">
+                                                <input type="text" class="form-control" id="inpNombre" placeholder=""
+                                                    autocomplete="name">
+                                                <label for="inpNombre">Nombre y Apellido</label>
+                                            </div>
+                                            <div class="form-floating mb-3">
+                                                <input type="" class="form-control" id="inpCodigoPostal" placeholder=""
+                                                    autocomplete="postal-code">
+                                                <label for="inpCodigoPostal">Código Postal</label>
+                                            </div>
+                                            <div class="row g-2 mb-3">
+                                                <div class="col-md">
+                                                    <div class="form-floating">
+                                                        <input type="text" class="form-control" id="inpProvincia"
+                                                            placeholder="">
+                                                        <label for="inpProvincia">Provincia</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md">
+                                                    <div class="col-md">
+                                                        <div class="form-floating">
+                                                            <input type="text" class="form-control" id="inpLocalidad"
+                                                                placeholder="">
+                                                            <label for="inpLocalidad">Localidad / Barrio</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row g-2 mb-3">
+                                                <div class="col-md">
+                                                    <div class="form-floating">
+                                                        <input type="text" class="form-control" id="inpDireccion"
+                                                            placeholder="" autocomplete="street-address">
+                                                        <label for="inpDireccion">Calle</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md">
+                                                    <div class="col-md">
+                                                        <div class="form-floating">
+                                                            <input type="number" class="form-control" id="inpNumero"
+                                                                placeholder="">
+                                                            <label for="inpNumero">Numero</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-floating mb-3">
+                                                <input type="text" class="form-control" id="inpPisoDepto" placeholder=""
+                                                    required:optional>
+                                                <label for="inpPisoDepto">Piso / Departamento (opcional)</label>
+                                            </div>
+                                            <div class="row g-2 mb-3">
+                                                <h5>Entre las calles (Opcional)</h5>
+                                                <div class="col-md">
+                                                    <div class="form-floating">
+                                                        <input type="text" class="form-control" id="inpEntreCalles1"
+                                                            placeholder="" autocomplete="street-address">
+                                                        <label for="inpEntreCalles1">Calle 1</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md">
+                                                    <div class="col-md">
+                                                        <div class="form-floating">
+                                                            <input type="text" class="form-control" id="inpEntreCalles2"
+                                                                placeholder="" autocomplete="street-address">
+                                                            <label for="inpEntreCalles2">Calle 2</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-floating mb-3">
+                                                <textarea class="form-control" id="inpComentario"
+                                                    style="height: 100px"></textarea>
+                                                <label for="inpComentario">Comentario adicional</label>
+                                            </div>
+                                            <div class="form-floating mb-3">
+                                                <input type="tel" class="form-control" id="inpTelefono" placeholder="">
+                                                <label for="inpTelefono">Teléfono</label>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button id="guardarDireccion" type="submit" class="btn btn-primary"data-bs-dismiss="modal"
+                                            >Guardar cambios</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="totalCompra" class="sumaTotal col-sm-8">
+                        <p>Total con envío</p>
+                        <p id="sumaTotal"></p>
+                    </div>
+                </div>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button id="vaciar" class="btn btn-primary me-md-2" type="button">Vaciar Carrito</button>
+                    <button id="continuarCompra" class="btn btn-primary me-md-2" type="button">Continuar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer id="pie">
+        <div>
+            <p>Todos los derechos reservados 2021 &copy;</p>
+        </div>
+    </footer>
+
+    
+</body>

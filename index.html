@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miel Don Humberto</title>
+
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" rel="stylesheet">
+
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    <!-- JQUERY -->
+    <script src="./source/Js/jquery-3.6.0.min.js"></script>
+
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="./source/Estilos/all.min.css">
+    <link rel="stylesheet" href="./source/Estilos/style.css">
+
+    <!-- SCRIPTS -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script defer src="./source/Js/main.js"></script>
+
+</head>
+
+<body>
+
+    <header id="home" class="container-fluid">
+        <div class="menuRedes">
+            <a href="https://www.facebook.com/profile.php?id=100004810981260" target="_blank"><i
+                    class="fab fa-facebook-square"></i></a>
+            <h2>Productos Artesanales</h2>
+            <a href="https://www.instagram.com/mieldonhumberto/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+
+        <h1>Don Humberto</h1>
+
+        <nav class="navbar navbar-expand-sm navbar-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav navegacion me-auto mb-2 mb-lg-0">
+                        <li class="nav-item navegacionItem">
+                            <a class="nav-link navegacionLink active" aria-current="page" href="#home">Inicio</a>
+                        </li>
+                        <li class="nav-item navegacionItem">
+                            <a class="nav-link navegacionLink active" aria-current="page" href="#tienda">Tienda</a>
+                        </li>
+
+
+                        <li class="nav-item navegacionItem">
+                            <a class="botonCarrito nav-link navegacionLink active" aria-current="page" href="./innerPages/carrito.html">Carrito</a>
+                        </li>
+
+
+
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <a href="https://api.whatsapp.com/send?phone=+54 9 3513 55-7194" class="wpp" target="_blank"><i
+                        class="fab fa-whatsapp my-wpp"></i></a>
+            </div>
+        </nav>
+    </header>
+
+
+    <main id="tienda" class="tienda conta container-fluid">
+        <h2>Nuestros Productos</h2>
+        <div class="container-fluid row contBuscador">
+            <div id="buscador" class=" col-sm-4 mb-4">
+                <input id="buscar" class="form-control col-sm-8 me-2" type="search" placeholder="Buscar producto"
+                    aria-label="Search">
+                <i id="botonBuscar" class="fas fa-search col-sm-4"></i>
+            </div>
+        </div>
+        <div id="cards" class="row">
+        </div>
+
+    </main>
+
+
+    <footer id="pie">
+        <div>
+            <p>Todos los derechos reservados 2021 &copy;</p>
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+</html>
